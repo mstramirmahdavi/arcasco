@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/styles/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./assets/js/color-thief.min.js"></script>
+  <script src="./assets/js/colorthiefscript.js"></script>
+
   <title>ARCAESCO</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <!-- <div class="row">
+        <header class="header">
+          <nav class="navigation">
+            <input
+              type="checkbox"
+              id="nav-toggle"
+              class="navigation__checkbox"
+            />
+            <label for="nav-toggle" class="navigation__button">MENU</label>
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__nav">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">HOME</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">ABOUT</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">PRODUCTS</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">CONTACT - US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="logo">Arcaesco</div>
+        </header>
+      </div> -->
+    <div class="tilesSlider">
+      <div class="tiles">
+        <div class="tileCont">
+          <div class="tile">
+            <img src="./assets/images/tiles/1.jpg" class="thiefColor" alt="">
+            <div class="tileborder tileborder0"></div>
+          </div>
+        </div>
+        <div class="tileCont">
+          <div class="tile">
+            <img src="./assets/images/tiles/2.jpg" class="thiefColor" alt="">
+            <div class="tileborder tileborder1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var $img = $('.thiefColor');
+    $img.load(function () {
+      for (let index = 0; index < $img.length; index++) {
+        var colorThief = new ColorThief();
+        var color = colorThief.getColor($img.get(index));
+        alert(index);
+        $(".tileborder" + index).css({
+          backgroundColor: 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')'
+        })
+      }
+    });
+  </script>
 </body>
+
 </html>

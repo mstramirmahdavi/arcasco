@@ -1,0 +1,5 @@
+.header {
+  width: 100%;
+  height: 9rem;
+  @include flex(row-reverse, space-between, center, "", "")
+}
