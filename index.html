@@ -59,6 +59,18 @@
             <div class="tileborder tileborder1"></div>
           </div>
         </div>
+        <div class="tileCont">
+          <div class="tile">
+            <img src="./assets/images/tiles/banner2.jpg" class="thiefColor" alt="">
+            <div class="tileborder tileborder2"></div>
+          </div>
+        </div>
+        <div class="tileCont">
+          <div class="tile">
+            <img src="./assets/images/tiles/5.jpg" class="thiefColor" alt="">
+            <div class="tileborder tileborder3"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -69,7 +81,6 @@
       for (let index = 0; index < $img.length; index++) {
         var colorThief = new ColorThief();
         var color = colorThief.getColor($img.get(index));
-        alert(index);
         $(".tileborder" + index).css({
           backgroundColor: 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')'
         })

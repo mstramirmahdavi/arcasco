@@ -10,7 +10,6 @@
     top: 50%;
     transform: translate(0%, -50%);
 
-    
     .tileCont {
       height: 15rem;
       position: relative;
@@ -29,6 +28,22 @@
         -webkit-transform: rotateX(15deg) translateX(-50%);
         transform-style: preserve-3d;
         transform: rotateX(15deg) translateX(-50%);
+        transform-origin: bottom;
+
+        /* &::after {
+          content: '';
+          width: 70%;
+          height: 50%;
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          z-index: 1;
+          background-image: url('./../../images/tiles/shadow.png');
+          -webkit-transform-style: preserve-3d;
+          -webkit-transform: rotateX(0deg) translate(-50%, -50%);
+          transform-style: preserve-3d;
+          transform: rotateX(0deg) translate(-50%, -50%);
+        } */
 
         img {
           width: 100%;
