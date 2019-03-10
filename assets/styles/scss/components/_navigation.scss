@@ -1,18 +1,141 @@
 .navigation {
-  &__checkbox {}
+  position: relative;
 
-  &__button {}
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked~&__background {
+    transform: scale(80)
+  }
+
+  &__checkbox:checked~&__nav {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+
+  &__checkbox:checked+&__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked+&__button &__icon::after {
+    transform: rotate(135deg);
+    top: 0;
+    background-color: $white;
+  }
+
+  &__checkbox:checked+&__button &__icon::before {
+    transform: rotate(-135deg);
+    top: 0;
+    background-color: $white;
+  }
+
+  &__button {
+    width: 6rem;
+    height: 6rem;
+    @include flex("", center, center, "", "");
+    position: fixed;
+    right: 8rem;
+    top: 2rem;
+    z-index: 903;
+    cursor: pointer;
+  }
 
   &__background {
     width: 6rem;
     height: 6rem;
+    background-image: linear-gradient(#232526, #414345);
+    position: fixed;
+    right: 8rem;
+    top: 2rem;
+    z-index: 901;
+    transform: scale(0);
+    overflow: hidden;
+    -webkit-transition: transform .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: transform .4s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 
-  &__nav {}
+  &__nav {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 902;
+    opacity: 0;
+    -webkit-transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
 
-  &__list {}
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
 
-  &__item {}
+  &__item {
+    margin: 1rem;
+  }
 
-  &__link {}
+  &__link {
+
+    &:visited,
+    &:link {
+      display: inline-block;
+      font-size: 3rem;
+      color: $white;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white 50%);
+      background-size: 300%;
+      transition: .4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $black;
+      transform: translateX(1rem)
+    }
+  }
+
+  &__icon {
+    position: relative;
+
+    &,
+    &::after,
+    &::before {
+      width: 3rem;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: .3s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
 }

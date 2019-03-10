@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'germany';
+  src: url('./../../fonts/GERMANY.TTF');
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+* {
+  font-family: 'germany';
+}

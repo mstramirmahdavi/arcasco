@@ -15,62 +15,92 @@
 
 <body>
   <div class="container">
-    <!-- <div class="row">
-        <header class="header">
-          <nav class="navigation">
-            <input
-              type="checkbox"
-              id="nav-toggle"
-              class="navigation__checkbox"
-            />
-            <label for="nav-toggle" class="navigation__button">MENU</label>
-            <div class="navigation__background">&nbsp;</div>
-            <div class="navigation__nav">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">HOME</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">ABOUT</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">PRODUCTS</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">CONTACT - US</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="logo">Arcaesco</div>
-        </header>
-      </div> -->
+    <header class="header">
+
+      <div class="headerCont">
+        <nav class="navigation">
+          <input type="checkbox" id="nav-toggle" class="navigation__checkbox" />
+          <label for="nav-toggle" class="navigation__button">
+            <div class="navigation__icon"></div>
+          </label>
+          <div class="navigation__background">&nbsp;</div>
+          <div class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">HOME</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">ABOUT</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">PRODUCTS</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">CONTACT - US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="logo">Arcaesco</div>
+      </div>
+    </header>
     <div class="tilesSlider">
+      <div class="whiteshadow"></div>
+      <div class="titles">
+        <h2>BLACK SWAN STONE</h2>
+        <h3>somthing about this product</h3>
+        <a href="#" class="sliderlink">Touch for more</a>
+      </div>
       <div class="tiles">
         <div class="tileCont">
-          <div class="tile">
-            <img src="./assets/images/tiles/1.jpg" class="thiefColor" alt="">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/5.jpg" class="thiefColor" id-role="tile1" alt="">
             <div class="tileborder tileborder0"></div>
-          </div>
+          </a>
         </div>
         <div class="tileCont">
-          <div class="tile">
-            <img src="./assets/images/tiles/2.jpg" class="thiefColor" alt="">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/6.jpg" class="thiefColor" id-role="tile2" alt="">
             <div class="tileborder tileborder1"></div>
-          </div>
+            <div class="shadow"></div>
+          </a>
         </div>
         <div class="tileCont">
-          <div class="tile">
-            <img src="./assets/images/tiles/banner2.jpg" class="thiefColor" alt="">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/3.jpg" class="thiefColor" id-role="tile3" alt="">
             <div class="tileborder tileborder2"></div>
-          </div>
+            <div class="shadow"></div>
+          </a>
         </div>
         <div class="tileCont">
-          <div class="tile">
-            <img src="./assets/images/tiles/5.jpg" class="thiefColor" alt="">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/4.jpg" class="thiefColor" id-role="tile4" alt="">
             <div class="tileborder tileborder3"></div>
-          </div>
+            <div class="shadow"></div>
+          </a>
         </div>
+        <div class="tileCont">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/2.jpg" class="thiefColor" id-role="tile5" alt="">
+            <div class="tileborder tileborder4"></div>
+            <div class="shadow"></div>
+          </a>
+        </div>
+        <div class="tileCont">
+          <a href="#" class="tile">
+            <img src="./assets/images/tiles/1.jpg" class="thiefColor" id-role="tile6" alt="">
+            <div class="tileborder tileborder5"></div>
+            <div class="shadow"></div>
+          </a>
+        </div>
+      </div>
+      <div class="sliderCoverCont">
+        <div class="sliderCover" id="tile1" style="display:none;background-image: url('./assets/images/slider/6.jpg')"></div>
+        <div class="sliderCover" id="tile2" style="display:none;background-image: url('./assets/images/slider/2.jpg')"></div>
+        <div class="sliderCover" id="tile3" style="display:none;background-image: url('./assets/images/slider/3.jpg')"></div>
+        <div class="sliderCover" id="tile4" style="display:none;background-image: url('./assets/images/slider/4.jpg')"></div>
+        <div class="sliderCover" id="tile5" style="display:none;background-image: url('./assets/images/slider/5.jpg')"></div>
+        <div class="sliderCover" id="tile6" style="background-image: url('./assets/images/slider/1.jpg')"></div>
       </div>
     </div>
   </div>
@@ -86,6 +116,14 @@
         })
       }
     });
+
+    $(".tilesSlider .tiles .tileCont .tile img").mouseenter(function () {
+        $(".tilesSlider .sliderCoverCont .sliderCover").css({
+          "display": "none"
+        });
+        $("#" + $(this).attr("id-role")).fadeIn();
+      })
+      .mouseleave(function () {});
   </script>
 </body>
 
