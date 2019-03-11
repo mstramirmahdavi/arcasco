@@ -14,6 +14,14 @@
       position: fixed;
       left: 8rem;
       top: 2rem;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $black 50%);
+      background-size: 300%;
+      transition: .4s;
+
+      &:hover {
+        background-position: 100%;
+        color: $white;
+      }
     }
   }
 }

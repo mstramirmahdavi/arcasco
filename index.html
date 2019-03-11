@@ -5,105 +5,218 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <link rel="stylesheet" href="./assets/styles/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/styles/css/owl.theme.default.min.css" /> -->
   <link rel="stylesheet" href="./assets/styles/css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./assets/js/color-thief.min.js"></script>
   <script src="./assets/js/colorthiefscript.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
 
   <title>ARCAESCO</title>
 </head>
 
 <body>
+  <!-- CONTAINER -->
   <div class="container">
+    <!-- HEADER -->
     <header class="header">
-
+      <!-- HEADERCONT -->
       <div class="headerCont">
+        <!-- NAVIGATION -->
         <nav class="navigation">
           <input type="checkbox" id="nav-toggle" class="navigation__checkbox" />
           <label for="nav-toggle" class="navigation__button">
             <div class="navigation__icon"></div>
           </label>
           <div class="navigation__background">&nbsp;</div>
+          <!-- NAVIGATION__NAV -->
           <div class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#" class="navigation__link">HOME</a>
+                <a href="#" class="navigation__link">01 - HOME</a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">ABOUT</a>
+                <a href="#" class="navigation__link">02 - ABOUT</a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">PRODUCTS</a>
+                <a href="#" class="navigation__link">03 - PRODUCTS</a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">CONTACT - US</a>
+                <a href="#" class="navigation__link">04 - CONTACT US</a>
               </li>
             </ul>
           </div>
+          <!-- END NAVIGATION__NAV -->
         </nav>
+        <!-- END NAVIGATION -->
         <div class="logo">Arcaesco</div>
       </div>
+      <!-- END HEADERCONT -->
     </header>
+    <!-- END HEADER -->
+    <!-- TILESSLIDER -->
     <div class="tilesSlider">
       <div class="whiteshadow"></div>
-      <div class="titles">
-        <h2>BLACK SWAN STONE</h2>
-        <h3>somthing about this product</h3>
-        <a href="#" class="sliderlink">Touch for more</a>
-      </div>
+
+      <!-- TILES -->
       <div class="tiles">
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/5.jpg" class="thiefColor" id-role="tile1" alt="">
+          <a href="#" class="tile" id-role="tile1">
+            <img src="./assets/images/tiles/5.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder0"></div>
           </a>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/6.jpg" class="thiefColor" id-role="tile2" alt="">
+          <a href="#" class="tile" id-role="tile2">
+            <img src="./assets/images/tiles/6.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder1"></div>
-            <div class="shadow"></div>
           </a>
+          <div class="shadow"></div>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/3.jpg" class="thiefColor" id-role="tile3" alt="">
+          <a href="#" class="tile" id-role="tile3">
+            <img src="./assets/images/tiles/3.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder2"></div>
-            <div class="shadow"></div>
+
           </a>
+          <div class="shadow"></div>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/4.jpg" class="thiefColor" id-role="tile4" alt="">
+          <a href="#" class="tile" id-role="tile4">
+            <img src="./assets/images/tiles/4.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder3"></div>
-            <div class="shadow"></div>
           </a>
+          <div class="shadow"></div>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/2.jpg" class="thiefColor" id-role="tile5" alt="">
+          <a href="#" class="tile" id-role="tile5">
+            <img src="./assets/images/tiles/2.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder4"></div>
-            <div class="shadow"></div>
           </a>
+          <div class="shadow"></div>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile">
-            <img src="./assets/images/tiles/1.jpg" class="thiefColor" id-role="tile6" alt="">
+          <a href="#" class="tile" id-role="tile6">
+            <img src="./assets/images/tiles/1.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder5"></div>
-            <div class="shadow"></div>
           </a>
+          <div class="shadow"></div>
         </div>
       </div>
+      <!-- END TILES -->
+      <!-- SLIDERCOVERCONT -->
       <div class="sliderCoverCont">
-        <div class="sliderCover" id="tile1" style="display:none;background-image: url('./assets/images/slider/6.jpg')"></div>
-        <div class="sliderCover" id="tile2" style="display:none;background-image: url('./assets/images/slider/2.jpg')"></div>
-        <div class="sliderCover" id="tile3" style="display:none;background-image: url('./assets/images/slider/3.jpg')"></div>
-        <div class="sliderCover" id="tile4" style="display:none;background-image: url('./assets/images/slider/4.jpg')"></div>
-        <div class="sliderCover" id="tile5" style="display:none;background-image: url('./assets/images/slider/5.jpg')"></div>
-        <div class="sliderCover" id="tile6" style="background-image: url('./assets/images/slider/1.jpg')"></div>
+        <div class="sliderCover" id="tile1" style="display:none;background-image: url('./assets/images/slider/6.jpg')">
+          <div class="titles">
+            <h2>BLACK SWAN STONE</h2>
+            <h3>somthing about this product</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+        <div class="sliderCover" id="tile2" style="display:none;background-image: url('./assets/images/slider/2.jpg')">
+          <div class="titles">
+            <h2>wall tiles</h2>
+            <h3>Lorem ipsum dolor sit</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+        <div class="sliderCover" id="tile3" style="display:none;background-image: url('./assets/images/slider/3.jpg')">
+          <div class="titles">
+            <h2>Material sandstone</h2>
+            <h3>somthing about this tile</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+        <div class="sliderCover" id="tile4" style="display:none;background-image: url('./assets/images/slider/4.jpg')">
+          <div class="titles">
+            <h2>accusantium quia hic.</h2>
+            <h3>somthing about this accusantium</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+        <div class="sliderCover" id="tile5" style="display:none;background-image: url('./assets/images/slider/5.jpg')">
+          <div class="titles">
+            <h2>AIRSLATE DELHI</h2>
+            <h3>about this AIRSLATE DELHI</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+        <div class="sliderCover" id="tile6" style="background-image: url('./assets/images/slider/1.jpg')">
+          <div class="titles">
+            <h2>AMSTERDAM HEXAGON GREY BPT</h2>
+            <h3>somthing about this product</h3>
+            <a href="#" class="sliderlink">Touch for more</a>
+          </div>
+        </div>
+      </div>
+      <!-- END SLIDERCOVERCONT -->
+    </div>
+    <!-- END TILESSLIDER -->
+    <!-- EXTRACONTENT -->
+    <div class="extraCont">
+      <div class="row">
+        <div class="mainSliderCont owl-carousel owl-theme" id="mainsliders">
+          <div class="mainSlider" style="background-image:url('./assets/images/slider/extra-slider-1.jpg')">
+            <p class="title">
+              Free Design Consultancy
+            </p>
+          </div>
+          <div class="mainSlider" style="background-image:url('./assets/images/slider/extra-slider-2.jpg')">
+            <p class="title">
+              somthing about this product
+            </p>
+          </div>
+          <div class="mainSlider" style="background-image:url('./assets/images/slider/extra-slider-3.jpg')">
+            <p class="title">
+              best quality
+            </p>
+          </div>
+        </div>
+        <div class="extraSliders">
+          <div class="extras owl-carousel owl-theme" id="extraslider">
+            <div class="item">
+              <div class="cover" style="background-image:url('./assets/images/tiles/1.jpg')"></div>
+              <div class="text">
+                <p>somthing about <br> product</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cover" style="background-image:url('./assets/images/tiles/2.jpg')"></div>
+              <div class="text">
+                <p>somthing about <br> product</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cover" style="background-image:url('./assets/images/tiles/3.jpg')"></div>
+              <div class="text">
+                <p>somthing about <br> product</p>
+              </div>
+            </div>
+          </div>
+          <div class="extras texty">
+            <div class="top">
+              <p>only</p>
+            </div>
+            <div class="middle">
+              <p>7$</p>
+            </div>
+            <div class="bottom">
+              <p>Per inches</p>
+            </div>
+          </div>
+          <div class="extras">
+            <div class="cover" style="background-image:url('./assets/images/slider/3.jpg')"></div>
+            <div class="text">
+              <p>somthing about <br> product</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- END EXTRACONTENT -->
   </div>
+  <!-- END CONTAINER -->
 
   <script>
     var $img = $('.thiefColor');
@@ -111,20 +224,24 @@
       for (let index = 0; index < $img.length; index++) {
         var colorThief = new ColorThief();
         var color = colorThief.getColor($img.get(index));
-        $(".tileborder" + index).css({
+        $('.tileborder' + index).css({
           backgroundColor: 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')'
-        })
+        });
       }
     });
 
-    $(".tilesSlider .tiles .tileCont .tile img").mouseenter(function () {
-        $(".tilesSlider .sliderCoverCont .sliderCover").css({
-          "display": "none"
+    $('.tilesSlider .tiles .tileCont .tile')
+      .mouseenter(function () {
+
+        $('.tilesSlider .sliderCoverCont .sliderCover').css({
+          display: 'none'
         });
-        $("#" + $(this).attr("id-role")).fadeIn();
+        $('#' + $(this).attr('id-role')).fadeIn();
       })
       .mouseleave(function () {});
   </script>
+
+  <script src="./assets/js/cusstom.js"></script>
 </body>
 
 </html>
