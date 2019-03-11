@@ -243,7 +243,7 @@ body,
       .tilesSlider .whiteshadow {
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(180deg, transparent 0%, transparent 30%, #ffffff 90%); } }
+        background-image: linear-gradient(180deg, transparent 0%, transparent 30%, #ffffff 75%); } }
   .tilesSlider .titles {
     position: absolute;
     width: 50%;
