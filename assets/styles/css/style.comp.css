@@ -72,6 +72,10 @@ body,
   max-width: 120rem;
   min-width: 120rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 900px) {
+    .row {
+      max-width: 100%;
+      min-width: 100%; } }
 
 .header {
   width: 100%;
@@ -93,6 +97,10 @@ body,
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000000 50%);
       background-size: 300%;
       transition: .4s; }
+      @media only screen and (max-width: 900px) {
+        .header .headerCont .logo {
+          left: 3rem;
+          top: 2rem; } }
       .header .headerCont .logo:hover {
         background-position: 100%;
         color: #ffffff; }
@@ -131,6 +139,10 @@ body,
     top: 2rem;
     z-index: 903;
     cursor: pointer; }
+    @media only screen and (max-width: 900px) {
+      .navigation__button {
+        right: 3rem;
+        top: 2rem; } }
   .navigation__background {
     width: 6rem;
     height: 6rem;
@@ -143,6 +155,10 @@ body,
     overflow: hidden;
     -webkit-transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+    @media only screen and (max-width: 900px) {
+      .navigation__background {
+        right: 3rem;
+        top: 2rem; } }
   .navigation__nav {
     width: 0;
     height: 100vh;
@@ -160,6 +176,9 @@ body,
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .navigation__list {
+        width: 90%; } }
   .navigation__item {
     margin: 1rem; }
   .navigation__link:visited, .navigation__link:link {
@@ -208,6 +227,11 @@ body,
     left: 0;
     background-image: linear-gradient(-100deg, transparent 0%, transparent 30%, #ffffff 70%);
     z-index: 1; }
+    @media only screen and (max-width: 900px) {
+      .tilesSlider .whiteshadow {
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(180deg, transparent 0%, transparent 30%, #ffffff 90%); } }
   .tilesSlider .titles {
     position: absolute;
     width: 50%;
@@ -216,6 +240,14 @@ body,
     transform: translate(-70%, -50%);
     z-index: 6;
     text-align: center; }
+    @media only screen and (max-width: 900px) {
+      .tilesSlider .titles {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 600px) {
+      .tilesSlider .titles {
+        width: 90%; } }
     .tilesSlider .titles h2 {
       font-size: 4rem; }
     .tilesSlider .titles h3 {
@@ -253,12 +285,27 @@ body,
     left: -55%;
     top: 60%;
     transform: translate(0%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .tilesSlider .tiles {
+        width: 100vw;
+        left: 5%;
+        bottom: -10%;
+        transform: translate(0%, 50%) rotate(-90deg); } }
+    @media only screen and (max-width: 600px) {
+      .tilesSlider .tiles {
+        width: 100vw;
+        left: 5%;
+        bottom: -0%;
+        transform: translate(0%, 50%) rotate(-90deg); } }
     .tilesSlider .tiles .tileCont {
       height: 5rem;
       position: relative;
       width: 100%;
       -webkit-perspective: 100px;
       perspective: 100px; }
+      @media only screen and (max-width: 900px) {
+        .tilesSlider .tiles .tileCont {
+          height: 100%; } }
       .tilesSlider .tiles .tileCont .tile {
         position: absolute;
         width: 50%;
@@ -320,17 +367,30 @@ body,
         font-size: 5rem;
         outline: 3px solid #000000;
         outline-offset: 1rem; }
+        @media only screen and (max-width: 900px) {
+          .extraCont .mainSliderCont .mainSlider .title {
+            font-size: 4rem; } }
   .extraCont .extraSliders {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem; }
+    @media only screen and (max-width: 900px) {
+      .extraCont .extraSliders {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center; } }
     .extraCont .extraSliders .extras {
       padding: 1rem;
       width: 39.3333333333rem;
       border: 2px solid #000000;
       align-self: stretch; }
+      @media only screen and (max-width: 900px) {
+        .extraCont .extraSliders .extras {
+          width: 100%;
+          margin: .5rem 0; } }
       .extraCont .extraSliders .extras.texty {
         display: flex;
         justify-content: center;

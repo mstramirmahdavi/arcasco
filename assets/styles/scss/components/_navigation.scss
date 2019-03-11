@@ -40,6 +40,11 @@
     top: 2rem;
     z-index: 903;
     cursor: pointer;
+
+    @include responsive(tablet, "") {
+      right: 3rem;
+      top: 2rem;
+    }
   }
 
   &__background {
@@ -54,6 +59,11 @@
     overflow: hidden;
     -webkit-transition: transform .4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: transform .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    @include responsive(tablet, "") {
+      right: 3rem;
+      top: 2rem;
+    }
   }
 
   &__nav {
@@ -75,6 +85,10 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+
+    @include responsive(phone, "") {
+      width: 90%;
+    }
   }
 
   &__item {

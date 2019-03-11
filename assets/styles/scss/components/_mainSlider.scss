@@ -12,6 +12,12 @@
     left: 0;
     background-image: linear-gradient(-100deg, transparent 0%, transparent 30%, $white 70%);
     z-index: 1;
+
+    @include responsive(tablet, "") {
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(180deg, transparent 0%, transparent 30%, $white 90%);
+    }
   }
 
   .titles {
@@ -22,6 +28,16 @@
     transform: translate(-70%, -50%);
     z-index: 6;
     text-align: center;
+
+    @include responsive(tablet, "") {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include responsive(phone, "") {
+      width: 90%;
+    }
 
     h2 {
       font-size: 4rem;
@@ -72,6 +88,20 @@
     top: 60%;
     transform: translate(0%, -50%);
 
+    @include responsive(tablet, "") {
+      width: 100vw;
+      left: 5%;
+      bottom: -10%;
+      transform: translate(0%, 50%) rotate(-90deg);
+    }
+
+    @include responsive(phone, "") {
+      width: 100vw;
+      left: 5%;
+      bottom: -0%;
+      transform: translate(0%, 50%) rotate(-90deg);
+    }
+
     .tileCont {
       height: 5rem;
       position: relative;
@@ -79,6 +109,9 @@
       -webkit-perspective: 100px;
       perspective: 100px;
 
+      @include responsive(tablet, "") {
+        height: 100%;
+      }
 
       .tile {
         position: absolute;

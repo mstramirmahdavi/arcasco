@@ -18,6 +18,10 @@
         font-size: 5rem;
         outline: 3px solid $black;
         outline-offset: 1rem;
+
+        @include responsive(tablet, "") {
+          font-size: 4rem;
+        }
       }
     }
   }
@@ -27,11 +31,20 @@
     @include flex("", space-between, center, "", "");
     margin-top: 1rem;
 
+    @include responsive(tablet, "") {
+      @include flex(column, space-between, center, "", "");
+    }
+
     .extras {
       padding: 1rem;
       width: 39.3333333333rem;
       border: 2px solid $black;
       align-self: stretch;
+
+      @include responsive(tablet, "") {
+        width: 100%;
+        margin: .5rem 0;
+      }
 
       &.texty {
         display: flex;

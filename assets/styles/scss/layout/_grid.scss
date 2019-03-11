@@ -8,4 +8,9 @@
   max-width: $max_width_value;
   min-width: $max_width_value;
   margin: 0 auto;
+
+  @include responsive(tablet, "") {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
