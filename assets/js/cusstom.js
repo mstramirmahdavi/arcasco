@@ -59,4 +59,16 @@ $(document).ready(function () {
       }
     }
   });
+  $('.tilesSlider .tiles .tileCont .tile')
+    .mouseenter(function () {
+      if ($(this).hasClass("active")) {} else {
+        $(this).addClass("active");
+        $('.tilesSlider .sliderCoverCont .sliderCover').fadeOut();
+        $('#' + $(this).attr('id-role')).fadeIn();
+      }
+    })
+    .mouseleave(function () {
+      $(".tilesSlider .tiles .tileCont .tile").removeClass("active");
+      $(this).addClass("active");
+    });
 })

@@ -97,7 +97,7 @@
           <div class="shadow"></div>
         </div>
         <div class="tileCont">
-          <a href="#" class="tile" id-role="tile6">
+          <a href="#" class="tile active" id-role="tile6">
             <img src="./assets/images/tiles/1.jpg" class="thiefColor" alt="" />
             <div class="tileborder tileborder5"></div>
           </a>
@@ -142,7 +142,7 @@
             <a href="#" class="sliderlink">Touch for more</a>
           </div>
         </div>
-        <div class="sliderCover" id="tile6" style="background-image: url('./assets/images/slider/1.jpg')">
+        <div class="sliderCover active" id="tile6" style="background-image: url('./assets/images/slider/1.jpg')">
           <div class="titles">
             <h2>AMSTERDAM HEXAGON GREY BPT</h2>
             <h3>somthing about this product</h3>
@@ -230,15 +230,7 @@
       }
     });
 
-    $('.tilesSlider .tiles .tileCont .tile')
-      .mouseenter(function () {
-
-        $('.tilesSlider .sliderCoverCont .sliderCover').css({
-          display: 'none'
-        });
-        $('#' + $(this).attr('id-role')).fadeIn();
-      })
-      .mouseleave(function () {});
+   
   </script>
 
   <script src="./assets/js/cusstom.js"></script>
