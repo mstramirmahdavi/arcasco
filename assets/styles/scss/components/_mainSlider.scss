@@ -10,13 +10,23 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(-100deg, transparent 0%, transparent 30%, $white 70%);
+    background-image: linear-gradient(
+      -100deg,
+      transparent 0%,
+      transparent 30%,
+      $white 70%
+    );
     z-index: 1;
 
-    @include responsive(tablet, "") {
+    @include responsive(tablet, '') {
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(180deg, transparent 0%, transparent 30%, $white 75%);
+      background-image: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 30%,
+        $white 75%
+      );
     }
   }
 
@@ -29,13 +39,13 @@
     z-index: 6;
     text-align: center;
 
-    @include responsive(tablet, "") {
+    @include responsive(tablet, '') {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    @include responsive(phone, "") {
+    @include responsive(phone, '') {
       width: 90%;
     }
 
@@ -48,15 +58,20 @@
     }
 
     .sliderlink {
-      padding: .5rem;
+      padding: 0.5rem;
       font-size: 1.5rem;
       margin: 1rem 0 0 0;
       display: inline-block;
       border: 1px solid $black;
       text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $black 50%);
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $black 50%
+      );
       background-size: 300%;
-      transition: .4s;
+      transition: 0.4s;
 
       &:hover,
       &:active {
@@ -71,7 +86,7 @@
     width: 70%;
     height: 2rem;
     position: absolute;
-    top: 1.6rem;
+    top: 4.6rem;
     box-shadow: 0px 20px 40px #000;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateX(-15deg) translateX(0%);
@@ -81,21 +96,21 @@
 
   .tiles {
     width: 100%;
-    @include flex(column-reverse, "", "", "", "");
+    @include flex(column-reverse, '', '', '', '');
     position: absolute;
     z-index: 2;
     left: -55%;
     top: 60%;
     transform: translate(0%, -50%);
 
-    @include responsive(tablet, "") {
+    @include responsive(tablet, '') {
       width: 100vw;
       left: 5%;
       bottom: -10%;
       transform: translate(0%, 50%) rotate(-90deg);
     }
 
-    @include responsive(phone, "") {
+    @include responsive(phone, '') {
       width: 100vw;
       left: 5%;
       bottom: -0%;
@@ -109,26 +124,25 @@
       -webkit-perspective: 100px;
       perspective: 100px;
 
-      @include responsive(tablet, "") {
+      @include responsive(tablet, '') {
         height: 100%;
       }
 
       .tile {
         position: absolute;
         width: 50%;
-        height: 15rem;
+        height: 25rem;
         left: 50%;
-        top: -11rem;
+        top: -19rem;
         background-size: 100% 100%;
         -webkit-transform-style: preserve-3d;
-        -webkit-transform: rotateX(15deg) translateX(-50%);
+        -webkit-transform: rotateX(6deg) translateX(-50%);
         transform-style: preserve-3d;
-        transform: rotateX(15deg) translateX(-50%);
+        transform: rotateX(6deg) translateX(-50%);
+        -webkit-transform-origin: bottom;
         transform-origin: bottom;
-        transition: .5s;
-        transition-delay: .2s;
-
-
+        transition: 0.5s;
+        transition-delay: 0.2s;
 
         &:hover {
           left: 75%;
@@ -140,16 +154,16 @@
         }
 
         .tileborder {
-          width: 98.8%;
+          width: 99.8%;
           height: 1rem;
           position: absolute;
           z-index: 2;
-          bottom: -.9rem;
+          bottom: -0.9rem;
           left: 50%;
           -webkit-transform-style: preserve-3d;
-          -webkit-transform: rotateX(-15deg) translateX(-50%);
+          -webkit-transform: rotateX(-6deg) translateX(-50%);
           transform-style: preserve-3d;
-          transform: rotateX(-15deg) translateX(-50%);
+          transform: rotateX(-6deg) translateX(-50%);
         }
       }
     }
