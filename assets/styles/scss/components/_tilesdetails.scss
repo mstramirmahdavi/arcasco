@@ -1,0 +1,110 @@
+.tileDetails {
+  width: 100%;
+  @include flex(row-reverse, center, center, "", "");
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+
+  .image {
+    width: 50%;
+    align-self: flex-start;
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .details {
+    width: 50%;
+    @include flex(column, center, center, "", "");
+    align-self: flex-start;
+    text-align: center;
+
+    .titles {
+      .title {
+        font-size: 4rem;
+      }
+
+      .subtitle {
+        font-size: 3rem;
+        font-weight: 100;
+      }
+    }
+
+    .sizeAndMore,
+    .categegories,
+    .categoriesDescription {
+
+      .detailsRow {
+        @include flex("", space-between, center, "", "");
+        width: 100%;
+
+        &.centered {
+          @include flex("", center, center, "", "");
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .detailCont {
+          @include flex("", center, "", "", "");
+          font-size: 1.8rem;
+          color: $special_border_fontColor;
+
+          .title {
+            @include flex("", "", "", 0 0 auto, "");
+          }
+
+          .content {
+            color: $black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .categegories {
+      .detailsRow {
+        padding: .5rem 1rem;
+
+        &.active {
+          background-color: $special_border_bgColor_active;
+        }
+
+        .detailCont {
+          color: $black;
+          font-weight: 700;
+
+          .content {
+            color: $special_border_fontColor;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .categoriesDescription {
+      width: 70%;
+      padding: 1rem;
+
+      .detailsRow {
+
+
+        .detailCont {
+          color: $black;
+          font-size: 1.3rem;
+          @include flex("", space-between, flex-start, "", "");
+
+          .title {
+            @include flex("", "", "", 0 0 10%, "");
+          }
+
+          .content {
+            color: $special_border_fontColor;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

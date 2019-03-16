@@ -1,0 +1,8 @@
+.specialBorder {
+  width: 70%;
+  padding: 1rem;
+  background-color: $special_border_bgColor;
+  outline: 1px solid $special_border_bgColor;
+  outline-offset: 1rem;
+  margin: 2rem 0;
+}

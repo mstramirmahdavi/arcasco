@@ -36,13 +36,13 @@
     height: 6rem;
     @include flex("", center, center, "", "");
     position: fixed;
-    right: 8rem;
+    right: 7.5rem;
     top: 2rem;
     z-index: 903;
     cursor: pointer;
 
     @include responsive(tablet, "") {
-      right: 3rem;
+      right: 1rem;
       top: 2rem;
     }
   }
@@ -61,7 +61,7 @@
     transition: transform .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     @include responsive(tablet, "") {
-      right: 3rem;
+      right: 1rem;
       top: 2rem;
     }
   }

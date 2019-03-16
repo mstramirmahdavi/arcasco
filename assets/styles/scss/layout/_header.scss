@@ -12,14 +12,14 @@
       border: 1px solid $black;
       font-size: 3rem;
       position: fixed;
-      left: 8rem;
+      left: 7.6rem;
       top: 2rem;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $black 50%);
       background-size: 300%;
       transition: .4s;
 
       @include responsive(tablet, "") {
-        left: 3rem;
+        left: 1rem;
         top: 2rem;
       }
 
