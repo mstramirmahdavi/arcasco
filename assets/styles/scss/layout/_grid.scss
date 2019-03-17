@@ -9,10 +9,13 @@
   min-width: $max_width_value;
   margin: 0 auto;
 
-  @include responsive(bigscreen, "") {
-    max-width: 90%;
-    min-width: 90%;
+  &.bigscreen {
+    @include responsive(bigscreen, "") {
+      max-width: 90%;
+      min-width: 90%;
+    }
   }
+
   @include responsive(tablet, "") {
     max-width: 100%;
     min-width: 100%;
