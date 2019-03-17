@@ -1,6 +1,5 @@
 .productdetailsCont {
   width: 100%;
-  height: 120vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -8,30 +7,28 @@
 
   .circle {
     position: absolute;
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     top: 0;
-    left: 15%;
+    left: 17.5%;
     border-radius: 50%;
     background-size: 150%;
     background-position: left;
   }
 
-  .whiteShadow {
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    top: 0;
-    background-image: url('./../../images/productImages/whiteshadow.png');
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: auto 100%;
+  .productDetails {
+    @include flex(row-reverse, flex-start, center, "", "");
+    height: 170vh;
   }
 
   .details {
-    width: 50%;
+    width: 100%;
     @include flex(column, center, center, "", "");
     text-align: center;
+
+    &.flexEnd {
+      align-self: flex-end;
+    }
 
     .titles {
       .title {
@@ -61,7 +58,7 @@
         }
 
         .detailCont {
-          @include flex("", center, "", "", "");
+          @include flex("", flex-start, "", "", "");
           font-size: 1.8rem;
           color: $special_border_fontColor;
 
@@ -72,6 +69,8 @@
           .content {
             color: $black;
             font-weight: 600;
+            text-align: left;
+            padding-left: 1rem;
           }
         }
       }
@@ -81,17 +80,44 @@
       .detailsRow {
         padding: .5rem 1rem;
 
-        &.active {
-          background-color: $special_border_bgColor_active;
-        }
+
 
         .detailCont {
+          width: 100%;
           color: $black;
           font-weight: 700;
+
+          .title {
+
+            &.active {
+              background-color: $special_border_bgColor_active;
+            }
+
+            &.flex {
+              @include flex("", flex-start, center, "", "");
+              text-align: left;
+              padding: 0 1rem;
+            }
+          }
 
           .content {
             color: $special_border_fontColor;
             text-align: left;
+            padding-left: 1rem;
+
+            &.nopadding {
+              padding: 0;
+              width: 100%;
+            }
+
+            .type {
+              @include flex("", flex-start, center, 1 0 auto, "");
+              padding: .5rem;
+            }
+
+            .active {
+              background-color: $special_border_bgColor_active;
+            }
           }
         }
       }
@@ -110,12 +136,13 @@
           @include flex("", space-between, flex-start, "", "");
 
           .title {
-            @include flex("", "", "", 0 0 10%, "");
+            @include flex("", "", "", 0 0 auto, "");
           }
 
           .content {
             color: $special_border_fontColor;
             text-align: left;
+            padding-left: 1rem;
           }
         }
       }
