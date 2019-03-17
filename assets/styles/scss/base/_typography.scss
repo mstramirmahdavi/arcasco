@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'germany';
-  src: url('./../../fonts/GERMANY.TTF');
+  src: url('./../../fonts/GERMANY\ SANS\ DEMO.TTF');
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'calibri';
+  src: url('./../../fonts/calibri.ttf');
   /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
@@ -10,4 +17,7 @@ html,
 body,
 * {
   font-family: 'germany';
+}
+.calibtiFont {
+  font-family: 'calibri' !important;
 }
