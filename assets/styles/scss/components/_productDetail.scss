@@ -28,7 +28,9 @@
   .productDetails {
     @include flex(row-reverse, flex-start, center, "", "");
     height: 170vh;
-
+    @include responsive(bigscreen, "") {
+      height: 120vh;
+    }
     @include responsive(tablet, "") {
       height: auto;
       @include flex(column, space-between, center, "", "");
