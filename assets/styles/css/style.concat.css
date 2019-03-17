@@ -483,23 +483,33 @@ body,
       .tileMainDetails .details .categegories .detailsRow .detailCont,
       .tileMainDetails .details .categoriesDescription .detailsRow .detailCont {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         font-size: 1.8rem;
         color: #9a9a9a; }
         .tileMainDetails .details .sizeAndMore .detailsRow .detailCont .content,
         .tileMainDetails .details .categegories .detailsRow .detailCont .content,
         .tileMainDetails .details .categoriesDescription .detailsRow .detailCont .content {
           color: #000000;
-          font-weight: 600; }
+          font-weight: 600;
+          text-align: left;
+          padding-left: 1rem; }
     .tileMainDetails .details .categegories .detailsRow {
       padding: .5rem 1rem; }
       .tileMainDetails .details .categegories .detailsRow.active {
         background-color: #c9c9c9; }
       .tileMainDetails .details .categegories .detailsRow .detailCont {
+        width: 100%;
         color: #000000; }
+        .tileMainDetails .details .categegories .detailsRow .detailCont .title {
+          display: flex;
+          flex: 0 0 15%;
+          justify-content: flex-start;
+          align-items: center; }
         .tileMainDetails .details .categegories .detailsRow .detailCont .content {
-          color: #9a9a9a; }
+          color: #9a9a9a;
+          text-align: left;
+          padding-left: 1rem; }
     .tileMainDetails .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
@@ -514,7 +524,8 @@ body,
           flex: 0 0 10%; }
         .tileMainDetails .details .categoriesDescription .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
 
 .tileDetails {
   width: 100%;
@@ -575,7 +586,9 @@ body,
         .tileDetails .details .categegories .detailsRow .detailCont .content,
         .tileDetails .details .categoriesDescription .detailsRow .detailCont .content {
           color: #000000;
-          font-weight: 600; }
+          font-weight: 600;
+          text-align: left;
+          padding-left: 1rem; }
     .tileDetails .details .categegories .detailsRow {
       padding: .5rem 1rem; }
       .tileDetails .details .categegories .detailsRow.active {
@@ -585,7 +598,8 @@ body,
         font-weight: 700; }
         .tileDetails .details .categegories .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
     .tileDetails .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
@@ -600,7 +614,8 @@ body,
           flex: 0 0 10%; }
         .tileDetails .details .categoriesDescription .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
 
 .specialBorder {
   width: 70%;
@@ -620,6 +635,11 @@ body,
   justify-content: flex-start;
   flex-direction: row-reverse;
   align-items: flex-end; }
+  .productMainCont .productMain {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-end; }
   .productMainCont .circle {
     position: absolute;
     width: 20vw;
@@ -631,7 +651,7 @@ body,
     .productMainCont .circle::after {
       content: '';
       width: 1px;
-      height: 6vw;
+      height: 20vh;
       position: absolute;
       top: 100%;
       left: 50%;
@@ -691,7 +711,9 @@ body,
         .productMainCont .details .categegories .detailsRow .detailCont .content,
         .productMainCont .details .categoriesDescription .detailsRow .detailCont .content {
           color: #000000;
-          font-weight: 600; }
+          font-weight: 600;
+          text-align: left;
+          padding-left: 1rem; }
     .productMainCont .details .categegories .detailsRow {
       padding: .5rem 1rem; }
       .productMainCont .details .categegories .detailsRow.active {
@@ -701,7 +723,8 @@ body,
         font-weight: 700; }
         .productMainCont .details .categegories .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
     .productMainCont .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
@@ -716,11 +739,11 @@ body,
           flex: 0 0 10%; }
         .productMainCont .details .categoriesDescription .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
 
 .productdetailsCont {
   width: 100%;
-  height: 120vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -730,29 +753,28 @@ body,
   align-items: center; }
   .productdetailsCont .circle {
     position: absolute;
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     top: 0;
-    left: 15%;
+    left: 17.5%;
     border-radius: 50%;
     background-size: 150%;
     background-position: left; }
-  .productdetailsCont .whiteShadow {
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    top: 0;
-    background-image: url("./../../images/productImages/whiteshadow.png");
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: auto 100%; }
+  .productdetailsCont .productDetails {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 170vh; }
   .productdetailsCont .details {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center; }
+    .productdetailsCont .details.flexEnd {
+      align-self: flex-end; }
     .productdetailsCont .details .titles .title {
       font-size: 4rem; }
     .productdetailsCont .details .titles .subtitle {
@@ -779,7 +801,7 @@ body,
       .productdetailsCont .details .categegories .detailsRow .detailCont,
       .productdetailsCont .details .categoriesDescription .detailsRow .detailCont {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 1.8rem;
         color: #9a9a9a; }
         .productdetailsCont .details .sizeAndMore .detailsRow .detailCont .title,
@@ -791,17 +813,38 @@ body,
         .productdetailsCont .details .categegories .detailsRow .detailCont .content,
         .productdetailsCont .details .categoriesDescription .detailsRow .detailCont .content {
           color: #000000;
-          font-weight: 600; }
+          font-weight: 600;
+          text-align: left;
+          padding-left: 1rem; }
     .productdetailsCont .details .categegories .detailsRow {
       padding: .5rem 1rem; }
-      .productdetailsCont .details .categegories .detailsRow.active {
-        background-color: #c9c9c9; }
       .productdetailsCont .details .categegories .detailsRow .detailCont {
+        width: 100%;
         color: #000000;
         font-weight: 700; }
+        .productdetailsCont .details .categegories .detailsRow .detailCont .title.active {
+          background-color: #c9c9c9; }
+        .productdetailsCont .details .categegories .detailsRow .detailCont .title.flex {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: left;
+          padding: 0 1rem; }
         .productdetailsCont .details .categegories .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
+          .productdetailsCont .details .categegories .detailsRow .detailCont .content.nopadding {
+            padding: 0;
+            width: 100%; }
+          .productdetailsCont .details .categegories .detailsRow .detailCont .content .type {
+            display: flex;
+            flex: 1 0 auto;
+            justify-content: flex-start;
+            align-items: center;
+            padding: .5rem; }
+          .productdetailsCont .details .categegories .detailsRow .detailCont .content .active {
+            background-color: #c9c9c9; }
     .productdetailsCont .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
@@ -813,10 +856,11 @@ body,
         align-items: flex-start; }
         .productdetailsCont .details .categoriesDescription .detailsRow .detailCont .title {
           display: flex;
-          flex: 0 0 10%; }
+          flex: 0 0 auto; }
         .productdetailsCont .details .categoriesDescription .detailsRow .detailCont .content {
           color: #9a9a9a;
-          text-align: left; }
+          text-align: left;
+          padding-left: 1rem; }
 
 /* 
     PAGES FILES
