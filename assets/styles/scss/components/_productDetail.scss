@@ -5,6 +5,11 @@
   position: relative;
   @include flex(row-reverse, flex-start, center, "", "");
 
+  @include responsive(tablet, "") {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .circle {
     position: absolute;
     width: 35vw;
@@ -14,11 +19,20 @@
     border-radius: 50%;
     background-size: 150%;
     background-position: left;
+
+    @include responsive(tablet, "") {
+      display: none;
+    }
   }
 
   .productDetails {
     @include flex(row-reverse, flex-start, center, "", "");
     height: 170vh;
+
+    @include responsive(tablet, "") {
+      height: auto;
+      @include flex(column, space-between, center, "", "");
+    }
   }
 
   .details {
@@ -127,6 +141,10 @@
       width: 70%;
       padding: 1rem;
 
+      @include responsive(phone, "") {
+        width: 100%;
+      }
+
       .detailsRow {
 
 
@@ -134,6 +152,10 @@
           color: $black;
           font-size: 1.3rem;
           @include flex("", space-between, flex-start, "", "");
+          @include responsive(phone, "") {
+            @include flex(column, flex-start, "", "", "");
+            font-size: 1.5rem;
+          }
 
           .title {
             @include flex("", "", "", 0 0 auto, "");

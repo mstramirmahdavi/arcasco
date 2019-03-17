@@ -3,11 +3,34 @@
   height: 120vh;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   @include flex(row-reverse, flex-start, flex-end, "", "");
 
+  @include responsive(tablet, "") {
+    height: auto;
+    background-position: 30%;
+  }
+
+  @include responsive(phone, "") {
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-size: 150% auto;
+    background-position: top;
+  }
+
   .productMain {
     @include flex(row-reverse, flex-start, flex-end, "", "");
+
+    @include responsive(tablet, "") {
+      padding-top: 65rem;
+    }
+
+    @include responsive(phone, "") {
+      padding-top: 35rem;
+    }
+
   }
 
   .circle {
@@ -18,6 +41,10 @@
     left: 25%;
     border-radius: 50%;
     border: 1px dashed $black;
+
+    @include responsive(tablet, "") {
+      display: none;
+    }
 
     &::after {
       content: '';
@@ -36,16 +63,26 @@
     height: 30%;
     position: absolute;
     top: 0;
+    left: 0;
     background-image: url('./../../images/productImages/whiteshadow.png');
     background-position: center;
     background-repeat: repeat-x;
     background-size: auto 100%;
+
+    @include responsive(tablet, "") {
+      top: -2%;
+      width: 150%;
+    }
   }
 
   .details {
     width: 50%;
     @include flex(column, center, center, "", "");
     text-align: center;
+
+    @include responsive(tablet, "") {
+      width: 100%;
+    }
 
     .titles {
       .title {

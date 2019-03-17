@@ -3,9 +3,22 @@
   @include flex("", center, center, "", "");
   padding-top: 9rem;
 
+  @include responsive(tablet, "") {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include responsive(tablet, "") {
+    @include flex(column, center, center, "", "");
+  }
+
   .image {
     width: 50%;
     align-self: flex-start;
+
+    @include responsive(tablet, "") {
+      width: 100%;
+    }
 
     img {
       width: 100%;
@@ -17,6 +30,10 @@
     @include flex(column, center, center, "", "");
     align-self: flex-start;
     text-align: center;
+
+    @include responsive(tablet, "") {
+      width: 100%;
+    }
 
     .titles {
       .title {
@@ -88,7 +105,9 @@
     .categoriesDescription {
       width: 70%;
       padding: 1rem;
-
+      @include responsive(phone, "") {
+        width: 100%;
+      }
       .detailsRow {
 
 

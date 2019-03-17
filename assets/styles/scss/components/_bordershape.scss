@@ -5,4 +5,7 @@
   outline: 1px solid $special_border_bgColor;
   outline-offset: 1rem;
   margin: 2rem 0;
+  @include responsive(phone, "") {
+    width: 100%;
+  }
 }
