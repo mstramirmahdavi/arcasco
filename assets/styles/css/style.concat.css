@@ -84,7 +84,7 @@ body,
   max-width: 120rem;
   min-width: 120rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) {
     .row {
       max-width: 100%;
       min-width: 100%; } }
@@ -109,7 +109,7 @@ body,
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000000 50%);
       background-size: 300%;
       transition: .4s; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1200px) {
         .header .headerCont .logo {
           left: 1rem;
           top: 2rem; } }
@@ -151,7 +151,7 @@ body,
     top: 2rem;
     z-index: 903;
     cursor: pointer; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .navigation__button {
         right: 1rem;
         top: 2rem; } }
@@ -167,7 +167,7 @@ body,
     overflow: hidden;
     -webkit-transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .navigation__background {
         right: 1rem;
         top: 2rem; } }
@@ -188,7 +188,7 @@ body,
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
       .navigation__list {
         width: 90%; } }
   .navigation__item {
@@ -239,7 +239,7 @@ body,
     left: 0;
     background-image: linear-gradient(-100deg, transparent 0%, transparent 30%, #ffffff 70%);
     z-index: 1; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .tilesSlider .whiteshadow {
         bottom: 0;
         left: 0;
@@ -252,12 +252,12 @@ body,
     transform: translate(-70%, -50%);
     z-index: 6;
     text-align: center; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .tilesSlider .titles {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
       .tilesSlider .titles {
         width: 90%; } }
     .tilesSlider .titles h2 {
@@ -297,13 +297,13 @@ body,
     left: -55%;
     top: 60%;
     transform: translate(0%, -50%); }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .tilesSlider .tiles {
         width: 100vw;
         left: 5%;
         bottom: -10%;
         transform: translate(0%, 50%) rotate(-90deg); } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
       .tilesSlider .tiles {
         width: 100vw;
         left: 5%;
@@ -315,7 +315,7 @@ body,
       width: 100%;
       -webkit-perspective: 100px;
       perspective: 100px; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1200px) {
         .tilesSlider .tiles .tileCont {
           height: 100%; } }
       .tilesSlider .tiles .tileCont .tile {
@@ -380,7 +380,7 @@ body,
         font-size: 5rem;
         outline: 3px solid #000000;
         outline-offset: 1rem; }
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1200px) {
           .extraCont .mainSliderCont .mainSlider .title {
             font-size: 4rem; } }
   .extraCont .extraSliders {
@@ -389,7 +389,7 @@ body,
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .extraCont .extraSliders {
         display: flex;
         justify-content: space-between;
@@ -400,7 +400,7 @@ body,
       width: 39.3333333333rem;
       border: 2px solid #000000;
       align-self: stretch; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1200px) {
         .extraCont .extraSliders .extras {
           width: 100%;
           margin: .5rem 0; } }
@@ -444,9 +444,22 @@ body,
   justify-content: center;
   align-items: center;
   padding-top: 9rem; }
+  @media only screen and (max-width: 1200px) {
+    .tileMainDetails {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media only screen and (max-width: 1200px) {
+    .tileMainDetails {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; } }
   .tileMainDetails .image {
     width: 50%;
     align-self: flex-start; }
+    @media only screen and (max-width: 1200px) {
+      .tileMainDetails .image {
+        width: 100%; } }
     .tileMainDetails .image img {
       width: 100%; }
   .tileMainDetails .details {
@@ -457,6 +470,9 @@ body,
     align-items: center;
     align-self: flex-start;
     text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .tileMainDetails .details {
+        width: 100%; } }
     .tileMainDetails .details .titles .title {
       font-size: 4rem; }
     .tileMainDetails .details .titles .subtitle {
@@ -513,6 +529,9 @@ body,
     .tileMainDetails .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
+      @media only screen and (max-width: 700px) {
+        .tileMainDetails .details .categoriesDescription {
+          width: 100%; } }
       .tileMainDetails .details .categoriesDescription .detailsRow .detailCont {
         color: #000000;
         font-size: 1.3rem;
@@ -535,11 +554,28 @@ body,
   align-items: center;
   padding-top: 9rem;
   padding-bottom: 9rem; }
+  @media only screen and (max-width: 1200px) {
+    .tileDetails {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .tileDetails .image {
     width: 50%;
     align-self: flex-start; }
+    @media only screen and (max-width: 1200px) {
+      .tileDetails .image {
+        width: 100%; } }
     .tileDetails .image img {
       width: 30%; }
+      @media only screen and (max-width: 1200px) {
+        .tileDetails .image img {
+          width: 33%; } }
+      @media only screen and (max-width: 700px) {
+        .tileDetails .image img {
+          width: 32.6%; } }
   .tileDetails .details {
     width: 50%;
     display: flex;
@@ -548,6 +584,9 @@ body,
     align-items: center;
     align-self: flex-start;
     text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .tileDetails .details {
+        width: 100%; } }
     .tileDetails .details .titles .title {
       font-size: 4rem; }
     .tileDetails .details .titles .subtitle {
@@ -603,6 +642,9 @@ body,
     .tileDetails .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
+      @media only screen and (max-width: 700px) {
+        .tileDetails .details .categoriesDescription {
+          width: 100%; } }
       .tileDetails .details .categoriesDescription .detailsRow .detailCont {
         color: #000000;
         font-size: 1.3rem;
@@ -624,22 +666,43 @@ body,
   outline: 1px solid #dddddd;
   outline-offset: 1rem;
   margin: 2rem 0; }
+  @media only screen and (max-width: 700px) {
+    .specialBorder {
+      width: 100%; } }
 
 .productMainCont {
   width: 100%;
   height: 120vh;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   justify-content: flex-start;
   flex-direction: row-reverse;
   align-items: flex-end; }
+  @media only screen and (max-width: 1200px) {
+    .productMainCont {
+      height: auto;
+      background-position: 30%; } }
+  @media only screen and (max-width: 700px) {
+    .productMainCont {
+      height: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-size: 150% auto;
+      background-position: top; } }
   .productMainCont .productMain {
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: flex-end; }
+    @media only screen and (max-width: 1200px) {
+      .productMainCont .productMain {
+        padding-top: 65rem; } }
+    @media only screen and (max-width: 700px) {
+      .productMainCont .productMain {
+        padding-top: 35rem; } }
   .productMainCont .circle {
     position: absolute;
     width: 20vw;
@@ -648,6 +711,9 @@ body,
     left: 25%;
     border-radius: 50%;
     border: 1px dashed #000000; }
+    @media only screen and (max-width: 1200px) {
+      .productMainCont .circle {
+        display: none; } }
     .productMainCont .circle::after {
       content: '';
       width: 1px;
@@ -662,10 +728,15 @@ body,
     height: 30%;
     position: absolute;
     top: 0;
+    left: 0;
     background-image: url("./../../images/productImages/whiteshadow.png");
     background-position: center;
     background-repeat: repeat-x;
     background-size: auto 100%; }
+    @media only screen and (max-width: 1200px) {
+      .productMainCont .whiteShadow {
+        top: -2%;
+        width: 150%; } }
   .productMainCont .details {
     width: 50%;
     display: flex;
@@ -673,6 +744,9 @@ body,
     flex-direction: column;
     align-items: center;
     text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .productMainCont .details {
+        width: 100%; } }
     .productMainCont .details .titles .title {
       font-size: 4rem; }
     .productMainCont .details .titles .subtitle {
@@ -751,6 +825,10 @@ body,
   justify-content: flex-start;
   flex-direction: row-reverse;
   align-items: center; }
+  @media only screen and (max-width: 1200px) {
+    .productdetailsCont {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .productdetailsCont .circle {
     position: absolute;
     width: 35vw;
@@ -760,12 +838,22 @@ body,
     border-radius: 50%;
     background-size: 150%;
     background-position: left; }
+    @media only screen and (max-width: 1200px) {
+      .productdetailsCont .circle {
+        display: none; } }
   .productdetailsCont .productDetails {
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: center;
     height: 170vh; }
+    @media only screen and (max-width: 1200px) {
+      .productdetailsCont .productDetails {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center; } }
   .productdetailsCont .details {
     width: 100%;
     display: flex;
@@ -848,12 +936,21 @@ body,
     .productdetailsCont .details .categoriesDescription {
       width: 70%;
       padding: 1rem; }
+      @media only screen and (max-width: 700px) {
+        .productdetailsCont .details .categoriesDescription {
+          width: 100%; } }
       .productdetailsCont .details .categoriesDescription .detailsRow .detailCont {
         color: #000000;
         font-size: 1.3rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-start; }
+        @media only screen and (max-width: 700px) {
+          .productdetailsCont .details .categoriesDescription .detailsRow .detailCont {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            font-size: 1.5rem; } }
         .productdetailsCont .details .categoriesDescription .detailsRow .detailCont .title {
           display: flex;
           flex: 0 0 auto; }
